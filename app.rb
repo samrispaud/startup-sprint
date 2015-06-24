@@ -18,6 +18,11 @@ class App < Sinatra::Base
     erb :subscribe
   end
 
+  get '/youtube' do
+    erb :youtube
+  end
+  
+
   get '/reddit' do
     # TODO: we can probably get the listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
