@@ -1,6 +1,7 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
+
   get '/' do
     @error = params['error']
     erb :home
@@ -49,4 +50,9 @@ class App < Sinatra::Base
 
     erb :schedule
   end
+
+  get '/team' do
+    erb :team
+  end
+
 end
