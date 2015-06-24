@@ -1,18 +1,21 @@
 <div>
-  <div class="column">
+  <div class="column" id="today">
+  
     <h3>Today</h3>
-    <ol>
-      <% @today.each do |item| %>
-        <li><%= item.first %>: <%= item.last %></li>
+    <table>
+      <tr><% @today.each do |item| %></tr>
+       <td> <%= item.first %></td>: <td><%= item.last %></td>
       <% end %>
-    </ol>
+    </table>
   </div>
-  <div class="column">
+ 
+  <div class="column" id="tomorrow">
+  <table>
     <h3>Tomorrow</h3>
-    <ol>
-      <% @tomorrow.each do |item| %>
-        <li><%= item.first %>: <%= item.last %></li>
+    <table>
+      <tr><% @today.each do |item| %></tr>
+       <td> <%= item.first %></td>: <td><%= item.last %></td>
       <% end %>
-    </ol>
+    </table>
   </div>
 </div>

@@ -88,7 +88,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*#today, #tomorrow {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 12px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 12px; /* Firefox */
+    column-gap: 12px;
 
+}
+/* number of columns
+* spacing btw columns
 
 
 
