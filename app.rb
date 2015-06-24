@@ -55,4 +55,8 @@ class App < Sinatra::Base
     erb :team
   end
 
+  get '/splash' do
+    erb :splash
+  end
+
 end
