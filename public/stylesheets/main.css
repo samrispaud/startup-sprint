@@ -87,6 +87,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ #egg {
+    margin-left: 300px;
+    display:block;
+   width: 126px;
+   height: 180px;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+    background-color: red; /* not working, let's see some red */
+    background-color: -moz-linear-gradient( top ,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0%, rgba(255, 0, 0, 1)), 
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, 1)),
+        color-stop(80%, rgba(255, 0, 255, 1)),
+        color-stop(100%, rgba(255, 0, 0, 1)));
+  
+}
+
+
 
 /*#today, #tomorrow {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -99,6 +127,7 @@ textarea {
 }
 /* number of columns
 * spacing btw columns
+
 
 
 

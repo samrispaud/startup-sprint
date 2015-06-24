@@ -12,7 +12,9 @@ class App < Sinatra::Base
     @email = params[:email]
 
     if !@email.match(/.+@.+/)
-      redirect to('/?error=email')
+     # redirect to('/?error=email')
+     return @full_name
+    #how to take name along in redirect 
     end
 
     erb :subscribe
